@@ -8,6 +8,8 @@ The plugin improves the content URL management by creating correlated pages that
 
 It can be useful for automating page detail creation of frequent content like news, products and other structured content.
 
+The plugin runs on Tomcat and Wildfly bundles for Liferay 7 ga 6.
+
 ## Build / deploy
 
 - Build all modules in the seo-helper folder and deploy them to your container. If hot deploying with blade, navigate to the modules directory and run `blade deploy`
