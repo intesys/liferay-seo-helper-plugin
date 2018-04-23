@@ -1,0 +1,4 @@
+#Bundle-Name: seo-helper-common
+#Bundle-SymbolicName: it.intesys.seo.helper.common.constants
+#Bundle-Version: 1.0.0
+Export-Package: it.intesys.seo.helper.common.constants

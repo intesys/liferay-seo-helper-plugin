@@ -1,0 +1,39 @@
+// uncomment to apply license plugin
+
+// exclude jsps that are liferay fragments 
+// since these have their own license with
+// Liferay's own copyright
+
+// if fragments are added or deleted, this must 
+// change accordingly
+//def fragmentProjects = [:]
+//fragmentProjects["seo-helper-journal-jsp"] = [
+//	"src/main/resources/META-INF/resources/article/display_page.jsp", 
+//	"src/main/resources/META-INF/resources/view.jsp"
+//]
+//fragmentProjects["seo-helper-layout-admin-jsp"] = [
+//	"src/main/resources/META-INF/resources/layout/details.jsp"
+//]
+//fragmentProjects["seo-helper-layout-taglib"] = [
+//	"src/main/resources/META-INF/resources/layouts_tree/page.jsp"
+//]
+//fragmentProjects["seo-helper-trash-web"] = [
+//	"src/main/resources/META-INF/resources/view.jsp"
+//]
+//subprojects {
+//	apply plugin: "com.github.hierynomus.license"
+
+//	def fileSep = System.getProperty("file.separator")
+
+//	license {
+//		if (fragmentProjects.keySet().contains(project.name)) {
+//			fragmentProjects.get(project.name).each {
+//				def path = "user.dir/" + project.name + "/" + it
+//				println "excluding ${ path }"
+//				exclude path
+//			}
+//		}
+//	
+//		header rootProject.file("licenses/license_seo-helper.txt")
+//	}
+//}

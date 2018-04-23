@@ -1,0 +1,11 @@
+dependencies {
+	compileOnly project.recommend("com.liferay.portal:com.liferay.portal.impl"      , "recommendations.props")
+	compileOnly project.recommend("com.liferay.portal:com.liferay.portal.kernel"    , "recommendations.props")
+	compileOnly project.recommend("javax.portlet:portlet-api"                       , "recommendations.props")
+	compileOnly project.recommend("javax.servlet:javax.servlet-api"                 , "recommendations.props")
+	compileOnly project.recommend("javax.servlet.jsp:javax.servlet.jsp-api"         , "recommendations.props")
+	compileOnly project.recommend("com.liferay:com.liferay.journal.api"             , "recommendations.props")
+	compileOnly project.recommend("com.liferay:com.liferay.journal.web"             , "recommendations.props")
+	compileOnly project.recommend("com.liferay:com.liferay.layout.taglib"           , "recommendations.props")
+	compileOnly project.recommend("com.liferay.portal:com.liferay.util.taglib"      , "recommendations.props")
+}

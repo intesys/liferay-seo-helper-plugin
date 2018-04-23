@@ -1,0 +1,10 @@
+.metadata
+.gradle
+.classpath
+.project
+.settings
+RemoteSystemsTempFiles
+build/
+target/
+bin/
+
