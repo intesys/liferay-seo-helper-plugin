@@ -80,10 +80,10 @@ boolean changeStructure = GetterUtil.getBoolean(request.getAttribute("edit_artic
 							<aui:select inlineField="true" label="intesys-display-page-parent-layout" name="<%= ParamKeys.GENERATION_PARENT_PLID %>">
 								<aui:option value="" />
 								<optgroup label="<liferay-ui:message key="public-pages" />">
-									<%=getLayoutsOption(themeDisplay.getScopeGroupId(), false, 0, 0, 0) %>
+									<%=getLayoutsOption(themeDisplay.getScopeGroupId(), false, 0, 0, 0, 2) %>
 								</optgroup>
 								<optgroup label="<liferay-ui:message key="private-pages" />">
-									<%=getLayoutsOption(themeDisplay.getScopeGroupId(), true, 0, 0, 0) %>
+									<%=getLayoutsOption(themeDisplay.getScopeGroupId(), true, 0, 0, 0, 2) %>
 								</optgroup>
 							</aui:select>	
 							
@@ -361,7 +361,10 @@ private String _getLayoutBreadcrumb(HttpServletRequest request, Layout layout, L
 %>
 <%-- pagegenerator --%>
 <%!
-private String getLayoutsOption(long groupId, boolean privateLayout, long parentId, int depth, long rootPlid) throws Exception{
+private String getLayoutsOption(long groupId, boolean privateLayout, long parentId, int depth, long rootPlid, int levelMax) throws Exception{
+	if (depth >= levelMax) {
+		return "";
+	}
 	List<Layout> layouts = LayoutLocalServiceUtil.getLayouts(groupId, privateLayout, parentId);
 	if(layouts==null || layouts.isEmpty()){
 		return "";
@@ -380,7 +383,7 @@ private String getLayoutsOption(long groupId, boolean privateLayout, long parent
 		}
 		sb.append(">"+namePrefix+layout.getNameCurrentValue());
 		sb.append("</option>");
-		sb.append(getLayoutsOption(groupId, privateLayout, layout.getLayoutId(), depth, rootPlid));
+		sb.append(getLayoutsOption(groupId, privateLayout, layout.getLayoutId(), depth, rootPlid, levelMax));
 	}
 	return sb.toString();
 }

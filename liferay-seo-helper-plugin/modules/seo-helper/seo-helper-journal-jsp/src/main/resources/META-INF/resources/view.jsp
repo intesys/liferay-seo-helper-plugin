@@ -118,7 +118,7 @@ data.put("qa-id", "navigation");
 							<%
 							String[] tabsNames = new String[0];
 							String[] tabsValues = new String[0];
-
+ 
 							if (journalDisplayContext.hasResults()) {
 								String tabName = StringUtil.appendParentheticalSuffix(LanguageUtil.get(request, "web-content"), journalDisplayContext.getTotal());
 
