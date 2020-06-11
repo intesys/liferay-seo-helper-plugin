@@ -1,6 +1,7 @@
 dependencies {
-	compileOnly project.recommend("com.liferay.portal:com.liferay.portal.kernel"   , "recommendations.props")
-	compileOnly project.recommend("com.liferay.portal:com.liferay.util.taglib"     , "recommendations.props")
-	compileOnly project.recommend("org.osgi:org.osgi.core"                         , "recommendations.props")
-	compileOnly project.recommend("org.osgi:org.osgi.service.component.annotations", "recommendations.props")		
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.util.taglib"
+	compileOnly group: "org.osgi", name: "org.osgi.core"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+
 }

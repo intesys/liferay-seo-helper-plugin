@@ -1,21 +1,42 @@
 plugins {
-	id "nebula.dependency-recommender" version "5.0.0"
 	id "com.github.hierynomus.license" version "0.14.0"
+
 }
 
+
+//configure([initBundle, distBundleZip]) {
+//        into("deploy") {
+//        from configurations.providedModules
+//   }
+//}
+
+
+
+// uncomment to generate lpkg files for multi-module projects
+//apply plugin: LpkgArchive
+
+
 allprojects {
+
 	apply plugin: "maven"
-	
+	apply plugin: "java"
+
 	group = "it.intesys"
-	version = "2.0.1"
-	
-	apply plugin: "nebula.dependency-recommender"
-	
-	dependencyRecommendations {
-	   propertiesFile file: file("${rootProject.projectDir}/recommendations.props"), name: "recommendations.props"
-	}
-	
+//    version = "1.3.8"
+
+
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+	compileJava.options.encoding = 'UTF-8'
+
+
+
+
+
+
 	repositories {
-	   mavenLocal()
+		mavenLocal()
+		mavenCentral()
 	}
+
 }

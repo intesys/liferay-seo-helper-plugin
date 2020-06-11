@@ -37,3 +37,36 @@
 //		header rootProject.file("licenses/license_seo-helper.txt")
 //	}
 //}
+
+
+
+
+buildscript {
+    dependencies {
+        classpath group: "com.liferay", name: "com.liferay.gradle.plugins.deployment.helper", version: "1.0.6"
+    }
+
+    repositories {
+        mavenLocal()
+
+        maven {
+            url "https://cdn.lfrs.sl/repository.liferay.com/nexus/content/groups/public"
+        }
+    }
+}
+
+
+
+apply plugin: "com.liferay.deployment.helper"
+buildDeploymentHelper {
+    outputFile = "${project.buildDir}/distributions/${project.name}-${project.version}.war"
+    deploymentFiles = [
+            'seo-helper-common/build/libs',
+            'seo-helper-i18n/build/libs',
+            'seo-helper-java/build/libs',
+            'seo-helper-journal-jsp/build/libs',
+            'seo-helper-journal-layout-admin-jsp/build/libs',
+            'seo-helper-layout-taglib/build/libs',
+            'seo-helper-trash-web/build/libs'
+    ]
+}

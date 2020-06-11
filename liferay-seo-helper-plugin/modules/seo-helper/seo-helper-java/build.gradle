@@ -1,20 +1,20 @@
 dependencies {
 	compile project(":modules:seo-helper:seo-helper-common")
-	
-	compileOnly project.recommend("javax.portlet:portlet-api"                               , "recommendations.props")
-	compileOnly project.recommend("javax.servlet:javax.servlet-api"                         , "recommendations.props")
-	compileOnly project.recommend("com.liferay.portal:com.liferay.portal.kernel"            , "recommendations.props")
-	compileOnly project.recommend("com.liferay.portal:com.liferay.util.taglib"              , "recommendations.props")
-	compileOnly project.recommend("com.liferay.portal:com.liferay.portal.impl"              , "recommendations.props")
-	compileOnly project.recommend("com.liferay:com.liferay.dynamic.data.mapping.api"        , "recommendations.props")
-	compileOnly project.recommend("com.liferay:com.liferay.journal.api"                     , "recommendations.props")
-	compileOnly project.recommend("com.liferay:com.liferay.journal.web"                     , "recommendations.props")
-	compileOnly project.recommend("com.liferay:com.liferay.journal.service"                 , "recommendations.props")
-	compileOnly project.recommend("com.liferay:com.liferay.document.library.api"            , "recommendations.props")
-	compileOnly project.recommend("com.liferay:com.liferay.registry.api"                    , "recommendations.props")
-	compileOnly project.recommend("com.liferay:com.liferay.osgi.service.tracker.collections", "recommendations.props")
-	compileOnly project.recommend("org.osgi:org.osgi.core"                                  , "recommendations.props")
-	compileOnly project.recommend("org.osgi:org.osgi.service.component.annotations"         , "recommendations.props")
-	compileOnly project.recommend("com.liferay:com.liferay.portal.upgrade"                  , "recommendations.props")
-	
+	compileOnly group: "javax.portlet", name: "portlet-api"
+	compileOnly group: "javax.servlet", name: "javax.servlet-api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.util.taglib"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.impl"
+	compileOnly group: "com.liferay", name: "com.liferay.dynamic.data.mapping.api"
+	compileOnly group: "com.liferay", name: "com.liferay.journal.api"
+	compileOnly group: "com.liferay", name: "com.liferay.journal.web"
+	compileOnly group: "com.liferay", name: "com.liferay.journal.service"
+	compileOnly group: "com.liferay", name: "com.liferay.document.library.api"
+	compileOnly group: "com.liferay", name: "com.liferay.registry.api"
+	compileOnly group: "com.liferay", name: "com.liferay.osgi.service.tracker.collections"
+	compileOnly group: "org.osgi", name: "org.osgi.core"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.upgrade.api"
+
+
 }
