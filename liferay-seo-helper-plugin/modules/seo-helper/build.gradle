@@ -65,7 +65,7 @@ buildDeploymentHelper {
             'seo-helper-i18n/build/libs',
             'seo-helper-java/build/libs',
             'seo-helper-journal-jsp/build/libs',
-            'seo-helper-journal-layout-admin-jsp/build/libs',
+            'seo-helper-layout-admin-jsp/build/libs',
             'seo-helper-layout-taglib/build/libs',
             'seo-helper-trash-web/build/libs'
     ]

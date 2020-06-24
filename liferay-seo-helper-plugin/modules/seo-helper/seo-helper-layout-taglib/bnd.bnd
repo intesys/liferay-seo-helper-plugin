@@ -1,4 +1,4 @@
 #Bundle-Name: seo-helper-layout-taglib
 #Bundle-SymbolicName: seo.helper.layout.taglib
 #Bundle-Version: 1.0.0
-Fragment-Host: com.liferay.layout.taglib;bundle-version="2.1.6"
+Fragment-Host: com.liferay.layout.taglib;bundle-version="2.2.2"

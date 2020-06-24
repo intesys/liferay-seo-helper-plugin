@@ -1,4 +1,4 @@
 #Bundle-Name: seo-helper-layout-admin-jsp
 #Bundle-SymbolicName: it.intesys.seo.helper.layout.admin.jsp
 #Bundle-Version: 1.0.0
-Fragment-Host: com.liferay.layout.admin.web;bundle-version="1.0.62"
+Fragment-Host: com.liferay.layout.admin.web;bundle-version="1.0.65"

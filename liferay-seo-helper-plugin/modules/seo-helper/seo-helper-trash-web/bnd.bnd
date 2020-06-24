@@ -1,4 +1,4 @@
 #Bundle-Name: seo-helper-trash-web
 #Bundle-SymbolicName: it.intesys.seo.helper.trash.web
 #Bundle-Version: 1.0.0
-Fragment-Host: com.liferay.trash.web;bundle-version="1.0.24"
+Fragment-Host: com.liferay.trash.web;bundle-version="1.0.26"
