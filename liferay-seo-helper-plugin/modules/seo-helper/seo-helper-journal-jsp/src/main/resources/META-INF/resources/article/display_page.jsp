@@ -80,10 +80,10 @@ boolean changeStructure = GetterUtil.getBoolean(request.getAttribute("edit_artic
 							<aui:select inlineField="true" label="intesys-display-page-parent-layout" name="<%= ParamKeys.GENERATION_PARENT_PLID %>">
 								<aui:option value="" />
 								<optgroup label="<liferay-ui:message key="public-pages" />">
-									<%=getLayoutsOption(themeDisplay.getScopeGroupId(), false, 0, 0, 0, 2) %>
+									<%=getLayoutsOption(themeDisplay.getScopeGroupId(), false, 0, 0, 0, 3) %>
 								</optgroup>
 								<optgroup label="<liferay-ui:message key="private-pages" />">
-									<%=getLayoutsOption(themeDisplay.getScopeGroupId(), true, 0, 0, 0, 2) %>
+									<%=getLayoutsOption(themeDisplay.getScopeGroupId(), true, 0, 0, 0, 3) %>
 								</optgroup>
 							</aui:select>	
 							
